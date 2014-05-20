@@ -1,6 +1,6 @@
 {
-  "name": "strider-github",
-  "version": "1.1.1",
+  "name": "strider-gogs",
+  "version": "0.0.1",
   "description": "A basic git provider for strider",
   "main": "index.js",
   "scripts": {
@@ -8,25 +8,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Strider-CD/strider-github.git"
+    "url": "https://github.com/compressed/strider-gogs.git"
   },
   "keywords": [
     "git",
     "strider"
   ],
-  "author": "Jared Forsyth <jared@jaredforsyth.com>",
+  "author": ["Jared Forsyth <jared@jaredforsyth.com>", "Christopher Brickley <brickley@gmail.com>"],
   "license": "MIT",
   "readmeFilename": "Readme.md",
   "strider": {
-    "id": "github",
-    "title": "Github",
+    "id": "gogs",
+    "title": "gogs",
     "type": "provider",
     "hosted": true,
     "config": {
       "controller": "GithubCtrl"
     },
     "accountConfig": {
-      "setupLink": "/auth/github"
+      "setupLink": "/auth/gogs"
     },
     "webapp": "lib/webapp.js",
     "worker": "lib/worker.js",
